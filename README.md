@@ -1,20 +1,18 @@
-# spark-nlp-Pyspark
+# Spark-nlp-Pyspark
+This project is focused on building a Spark ML Pipeline using Pyspark to perform natural language processing on a dataset. The pipeline uses the following annotators:
 
-**Create a Spark ML Pipeline using the following annotators (Use English pretrained models):**
+## Getting Started
+To get started with the project, you will need to have Spark and Pyspark installed on your machine. Additionally, you will need to import the necessary libraries, including the pretrained models for English.
 
- #### a.	DocumentAssembler
-  
- #### b.	Tokenizer
-  
- #### c.	WordEmbeddingsModel (Word Embeddings, Glove)
-  
- #### d.	PerceptronModel (Part of Speech)
-  
-####  e.	NerCrfModel (Named Entity Recognition)
-  
-  
+## Prerequisites
+- [Apache Spark](https://spark.apache.org/)
+- [Pyspark](https://spark.apache.org/docs/latest/api/python/)
+- [Spark NLP](https://nlp.johnsnowlabs.com/)
 
-Print the transformed DataFrame showing only the POS column and the NER column. BONUS: Show only the result attribute of these Annotations
+## Installing
+To install Spark and Pyspark, please follow the instructions provided on the respective websites. To install the Spark NLP library, you can use the following command in your Pyspark project:
 
+` !pip install spark-nlp `
 
-Collect the result attribute of NER and POS, find a way to explain any relationship (if exists) between found entities and their part of speech attributes.
+## Running the Application
+The application is run by executing the script file containing the pipeline. The pipeline will read the input dataset, and it will print the transformed DataFrame showing only the POS column and the NER column. As a bonus, it will only show the result attribute of these annotations. The result attribute of NER and POS will be collected, and the relationship between found entities and their part of speech attributes will be analyzed and explained.
